@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9CD2FF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.registerWindow.RegisterWindowController">
+   <children>
+      <AnchorPane layoutX="185.0" prefHeight="130.0" prefWidth="600.0" style="-fx-background-color: #7CA8CC;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="97.0" fitWidth="139.0" layoutX="31.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/transparent-movie-film1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="216.0" layoutY="36.0" prefHeight="59.0" prefWidth="169.0" text="My_movies">
+               <font>
+                  <Font name="Harrington" size="31.0" />
+               </font>
+            </Label>
+            <Button fx:id="authButton" layoutX="428.0" layoutY="53.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" style="-fx-background-color: #4FB0FF; -fx-border-color: #fafafa;" text="Авторизация">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="loginField" layoutX="104.0" layoutY="151.0" prefHeight="25.0" prefWidth="180.0" promptText="Логин" />
+      <TextField fx:id="nameField" layoutX="317.0" layoutY="151.0" prefHeight="25.0" prefWidth="180.0" promptText="Имя" />
+      <PasswordField fx:id="passwordField" layoutX="104.0" layoutY="190.0" prefHeight="25.0" prefWidth="180.0" promptText="Пароль" />
+      <DatePicker fx:id="dateField" editable="false" layoutX="317.0" layoutY="190.0" prefHeight="25.0" prefWidth="180.0" promptText="Дата рождения" />
+      <Button fx:id="registerButton" layoutX="221.0" layoutY="253.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" style="-fx-background-color: #4FB0FF; -fx-border-color: #fafafa;" text="Регистрация">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="infoLabel" alignment="TOP_LEFT" layoutX="154.0" layoutY="297.0" prefHeight="52.0" prefWidth="327.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

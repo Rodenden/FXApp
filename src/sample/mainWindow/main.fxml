@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9CD2FF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mainWindow.MainWindowController">
+   <children>
+      <AnchorPane layoutX="185.0" prefHeight="130.0" prefWidth="600.0" style="-fx-background-color: #7CA8CC;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="101.0" fitWidth="128.0" layoutX="52.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/transparent-movie-film1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="216.0" layoutY="36.0" prefHeight="59.0" prefWidth="169.0" text="My_movies">
+               <font>
+                  <Font name="Harrington" size="31.0" />
+               </font>
+            </Label>
+            <Button fx:id="registerButton" layoutX="428.0" layoutY="53.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="158.0" style="-fx-background-color: #4FB0FF; -fx-border-color: #fafafa;" text="Регистрация">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="loginField" layoutX="210.0" layoutY="190.0" prefHeight="25.0" prefWidth="180.0" promptText="Логин" />
+      <Button fx:id="loginButton" layoutX="243.0" layoutY="274.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: #4FB0FF; -fx-border-color: #fafafa;" text="Вход">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passwordField" layoutX="210.0" layoutY="235.0" prefHeight="25.0" prefWidth="180.0" promptText="Пароль" />
+      <Label fx:id="infoLabel" alignment="TOP_CENTER" layoutX="159.0" layoutY="323.0" prefHeight="52.0" prefWidth="283.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
